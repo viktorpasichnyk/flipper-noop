@@ -21,11 +21,11 @@ dependencies {
     ...
     // Here add dependencies for needed flipper plugins
     ...
-    debugImplementation 'com.facebook.soloader:soloader:0.10.1'
+    debugImplementation "com.facebook.soloader:soloader:0.10.1"
 
 
     // For release builds
-    releaseImplementation(com.github.viktorpasichnyk:flipper-noop:1.0.0)
+    releaseImplementation "com.github.viktorpasichnyk:flipper-noop:1.0.0"
 }
 
 ```

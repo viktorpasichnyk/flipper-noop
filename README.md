@@ -29,3 +29,19 @@ dependencies {
 }
 
 ```
+
+Initialize Flipper in your Application's onCreate method:
+
+```
+ override fun onCreate() {
+        super.onCreate()
+       
+        SoLoader.init(context, false)
+       
+        if (BuildConfig.DEBUG) {
+            val client = AndroidFlipperClient.getInstance(context)
+            client.addPlugin((NetworkFlipperPlugin())
+            client.start()
+        }
+    }
+```
